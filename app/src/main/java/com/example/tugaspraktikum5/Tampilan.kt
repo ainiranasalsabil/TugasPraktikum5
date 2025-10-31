@@ -37,7 +37,11 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             contentAlignment = Alignment.Center
         ) {
             Text (
-
+                text = "Formulir Pendaftaran",
+                color = Color.White,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center,
+                style = MaterialTheme.typography.headlineSmall
             )
         }
     }
