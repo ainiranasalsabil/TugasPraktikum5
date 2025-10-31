@@ -22,7 +22,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
     val gender = listOf("Laki-laki", "Perempuan")
     val statusKawin = listOf("Janda", "Lajang", "Duda")
 
-    Column (
+    Column(
         modifier = modifier
             .fillMaxSize()
             .background(Color.LightGray),
@@ -66,7 +66,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                                     selected = textJK == item,
                                     onClick = { textJK = item }
                                 )
-                                .padding(Vertical = 4.dp),
+                                .padding(vertical = 4.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             RadioButton(
@@ -89,7 +89,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                                 )
                                 .padding(vertical = 4.dp),
                             verticalAlignment = Alignment.CenterVertically
-                        ){
+                        ) {
                             RadioButton(
                                 selected = textStatus == item,
                                 onClick = { textStatus = item }
@@ -97,6 +97,8 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                             Text(item)
                         }
                     }
+                }
+                OutlinedTextField()
             }
         }
     }
