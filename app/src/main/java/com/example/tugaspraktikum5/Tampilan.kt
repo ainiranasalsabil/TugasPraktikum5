@@ -58,6 +58,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 Text("Jenis Kelamin", fontWeight = FontWeight.SemiBold)
+                Column ()
             }
         }
     }
