@@ -111,9 +111,9 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         .height(50.dp),
                     enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty(),
                     onClick = {},
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
+                    colors = ButtonDefaults.buttonColors(containerColor = Color.LightGray)
                 ) {
-                    Text("Submit", color = Color.White)
+                    Text("Submit", color = Color.Black)
 
                 }
             }
