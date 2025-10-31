@@ -48,6 +48,12 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(20.dp))
 
         ElevatedCard(
-
-        )
+            modifier = Modifier
+                .fillMaxWidth(0.9f)
+                .wrapContentHeight(),
+            elevation = CardDefaults.cardElevation(10.dp)
+        ){
+            Column ()
+        }
+        }
 }
