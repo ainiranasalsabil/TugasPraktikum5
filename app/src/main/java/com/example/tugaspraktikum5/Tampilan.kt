@@ -52,11 +52,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .fillMaxWidth(0.9f)
                 .wrapContentHeight(),
             elevation = CardDefaults.cardElevation(10.dp)
-        ){
+        ) {
             Column (
                 modifier = Modifier.padding(20.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
-            )
+            ) {
+                Text("Jenis Kelamin", fontWeight = FontWeight.SemiBold)
+            }
         }
     }
 }
