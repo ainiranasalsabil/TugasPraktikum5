@@ -11,6 +11,12 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
     val statusKawin = listOf("Janda", "Lajang", "Duda")
 
     Column (
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color.LightGray),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
 
-    )
+    }
 }
