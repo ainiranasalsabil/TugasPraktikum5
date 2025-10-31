@@ -1,5 +1,17 @@
 package com.example.tugaspraktikum5
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+
 @Composable
 fun FormDataDiri(modifier: Modifier = Modifier) {
     var textNama by remember { mutableStateOf("") }
@@ -23,6 +35,10 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .height(100.dp)
                 .background(Color.Blue),
             contentAlignment = Alignment.Center
-        )
+        ) {
+            Text (
+
+            )
+        }
     }
 }
