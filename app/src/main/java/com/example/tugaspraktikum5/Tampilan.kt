@@ -29,14 +29,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box (
+        Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(100.dp)
                 .background(Color.Blue),
             contentAlignment = Alignment.Center
         ) {
-            Text (
+            Text(
                 text = "Formulir Pendaftaran",
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
@@ -53,13 +53,27 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .wrapContentHeight(),
             elevation = CardDefaults.cardElevation(10.dp)
         ) {
-            Column (
+            Column(
                 modifier = Modifier.padding(20.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 Text("Jenis Kelamin", fontWeight = FontWeight.SemiBold)
-                Column ()
+                Column {
+                    gender.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = textJK == item,
+                                    onClick = { textJK = item }
+                                )
+                                .padding(Vertical = 4.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+
+                        }
+
+                    }
+                }
             }
         }
     }
-}
