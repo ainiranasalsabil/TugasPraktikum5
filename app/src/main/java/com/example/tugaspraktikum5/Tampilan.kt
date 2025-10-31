@@ -57,6 +57,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(20.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
+                OutlinedTextField(
+                    value = textNama,
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text("Nama Lengkap") },
+                    onValueChange = { textNama = it }
+                )
+
                 Text("Jenis Kelamin", fontWeight = FontWeight.SemiBold)
                 Column {
                     gender.forEach { item ->
@@ -76,8 +84,8 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                             Text(item)
                         }
                     }
-
                 }
+
                 Text("Status Perkawinan", fontWeight = FontWeight.SemiBold)
                 Column {
                     statusKawin.forEach { item ->
@@ -98,6 +106,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         }
                     }
                 }
+
                 OutlinedTextField(
                     value = textAlamat,
                     singleLine = true,
@@ -105,16 +114,16 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     label = { Text("Alamat Lengkap") },
                     onValueChange = { textAlamat = it }
                 )
+
                 Button(
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(50.dp),
                     enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty(),
                     onClick = {},
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.LightGray)
+                    colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
                 ) {
-                    Text("Submit", color = Color.Black)
-
+                    Text("Submit", color = Color.White)
                 }
             }
         }
