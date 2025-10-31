@@ -98,7 +98,24 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         }
                     }
                 }
-                OutlinedTextField()
+                OutlinedTextField(
+                    value = textAlamat,
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text("Alamat Lengkap") },
+                    onValueChange = { textAlamat = it }
+                )
+                Button(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp),
+                    enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty(),
+                    onClick = {},
+                    colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
+                ) {
+                    Text("Submit", color = Color.White)
+
+                }
             }
         }
     }
