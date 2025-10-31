@@ -53,7 +53,10 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .wrapContentHeight(),
             elevation = CardDefaults.cardElevation(10.dp)
         ){
-            Column ()
+            Column (
+                modifier = Modifier.padding(20.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            )
         }
-        }
+    }
 }
