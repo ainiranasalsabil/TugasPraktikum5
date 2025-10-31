@@ -10,4 +10,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
     val gender = listOf("Laki-laki", "Perempuan")
     val statusKawin = listOf("Janda", "Lajang", "Duda")
 
+    Column (
+
+    )
 }
