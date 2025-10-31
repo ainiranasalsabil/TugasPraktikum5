@@ -80,7 +80,17 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 }
                 Text("Status Perkawinan", fontWeight = FontWeight.SemiBold)
                 Column {
-                    statusKawin.forEach { item ->}
+                    statusKawin.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = textStatus == item,
+                                    onClick = { textStatus = item }
+                                )
+                                .padding(vertical = 4.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        )
+                    }
             }
         }
     }
