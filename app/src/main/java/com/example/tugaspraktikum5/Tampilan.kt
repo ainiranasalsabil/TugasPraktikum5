@@ -75,10 +75,12 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                             )
                             Text(item)
                         }
-                        }
-
                     }
+
                 }
+                Text("Status Perkawinan", fontWeight = FontWeight.SemiBold)
+
             }
         }
     }
+}
