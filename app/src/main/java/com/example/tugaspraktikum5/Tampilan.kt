@@ -44,5 +44,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 style = MaterialTheme.typography.headlineSmall
             )
         }
+
+        Spacer(modifier = Modifier.height(20.dp))
     }
 }
