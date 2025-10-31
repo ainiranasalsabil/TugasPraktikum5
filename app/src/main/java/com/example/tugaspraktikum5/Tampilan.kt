@@ -79,7 +79,8 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
 
                 }
                 Text("Status Perkawinan", fontWeight = FontWeight.SemiBold)
-
+                Column {
+                    statusKawin.forEach { item ->}
             }
         }
     }
